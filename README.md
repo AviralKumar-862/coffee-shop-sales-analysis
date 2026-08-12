@@ -103,7 +103,9 @@ Based on the dashboard:
 
 ## 📸 Dashboard Preview
 
-coffee_shop_sales.png
+## 📸 Dashboard Preview
+
+![Coffee Shop Sales Dashboard](coffee_shop_sales.png.)
 
 ## 🎓 Skills Demonstrated
 
