@@ -99,13 +99,11 @@ Based on the dashboard:
 | File                     | Description                                       |
 | ------------------------ | ------------------------------------------------- |
 | `Coffee_Shop_Sales.xlsx` | Complete Excel analysis and interactive dashboard |
-| `Dashboard.png`          | Preview image of the completed dashboard          |
+| `coffee_shop_sales.png`          | Preview image of the completed dashboard          |
 
 ## 📸 Dashboard Preview
 
-## 📸 Dashboard Preview
-
-![Coffee Shop Sales Dashboard](coffee_shop_sales.png.)
+![Coffee Shop Sales Dashboard](coffee_shop_sales.png)
 
 ## 🎓 Skills Demonstrated
 
