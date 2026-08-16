@@ -14,7 +14,7 @@ The analysis focuses on identifying important business trends such as top-perfor
 ## 📸 Dashboard Preview
 
 
-![coffee-shop-sales-analysis](power bi/Executive sales overview.png)
+![coffee-shop-sales-analysis](power%bi/Executive-sales-overview.png)
 
 ### 1. Executive Sales Overview
 
