@@ -12,15 +12,11 @@ The analysis focuses on identifying important business trends such as top-perfor
 
 ## 🖼️ Dashboard Preview
 
-
-
-
-
 ### 1. Executive Sales Overview
 
 An executive-level overview of overall sales performance, including revenue trends, hourly sales, product category performance, store performance, and weekday sales.
 
-![coffee-shop-sales-analysis](power%bi/Executive-sales-overview.png)
+
 ---
 
 ### 2. Product Analysis
