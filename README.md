@@ -1,129 +1,239 @@
-# ☕ Coffee Shop Sales Analysis | Excel Dashboard
+# ☕ Coffee Shop Sales Analysis | Power BI & Excel
 
 ## 📌 Project Overview
 
-This project is an interactive **Coffee Shop Sales Analysis Dashboard** created using Microsoft Excel. The dashboard analyzes coffee shop transaction data to identify sales trends, customer purchasing patterns, product performance, and transaction behavior across different locations and time periods.
+This project analyzes **coffee shop sales data** to understand revenue performance, product performance, store performance, and sales trends across different time periods.
 
-The dashboard allows users to filter the analysis by coffee shop location and explore key business metrics through charts and tables.
+The project includes **three interactive Power BI dashboards** and **one Excel dashboard**, providing multiple perspectives of the same sales dataset.
 
-## 🛠️ Tools & Techniques Used
+The analysis focuses on identifying important business trends such as top-performing products, highest-revenue categories, peak sales hours, store performance, and weekday sales patterns.
 
-* Microsoft Excel
-* PivotTables
-* PivotCharts
-* Excel Slicers
-* Data Cleaning
-* Data Analysis
-* Data Visualization
+---
+
+## 🖼️ Dashboard Preview
+
+### 1. Executive Sales Overview
+
+An executive-level overview of overall sales performance, including revenue trends, hourly sales, product category performance, store performance, and weekday sales.
+
+---
+
+### 2. Product Analysis
+
+Analyzes product and category performance using revenue, quantity, transactions, product types, and top-performing products.
+
+---
+
+### 3. Time & Store Analysis
+
+Analyzes sales performance across different stores, months, hours, and weekdays to identify high-performing locations and peak sales periods.
+
+---
+
+### 4. Coffee Shop Sales — Excel
+
+An Excel-based dashboard presenting key sales KPIs and visual analysis of the coffee shop dataset.
+
+---
+
+## 🛠️ Tools & Technologies
+
+* **Microsoft Power BI**
+
+  * Data Visualization
+  * DAX
+  * Interactive Slicers
+  * KPI Cards
+  * Conditional Formatting
+  * Data Modeling
+* **Microsoft Excel**
+
+  * Data Analysis
+  * Pivot Tables
+  * Charts & Dashboards
+* **Dataset:** Maven Analytics Coffee Shop Sales
+
+---
+
+## 📊 Dashboards Included
+
+### 1. Executive Sales Overview — Power BI
+
+Provides a high-level overview of overall coffee shop sales performance.
+
+**Key metrics:**
+
+* Total Revenue
+* Total Transactions
+* Total Quantity Sold
+* Average Transaction Value
+* Average Unit Price
+
+**Key analysis:**
+
+* Revenue by Month
+* Revenue by Hour
+* Revenue by Product Category
+* Revenue by Store Location
+* Revenue by Weekday
+
+This dashboard is designed to provide a quick executive-level view of sales performance and major revenue drivers.
+
+---
+
+### 2. Product Analysis — Power BI
+
+Focuses on understanding product and category performance.
+
+**Key analysis:**
+
+* Top 10 Products by Revenue
+* Top 10 Products by Quantity
+* Revenue by Product Type
+* Quantity by Product Category
+* Product Category Performance
+* Revenue, Quantity, Transactions and Average Unit Price by Category
+
+This dashboard helps identify the products and categories that contribute most significantly to overall sales.
+
+---
+
+### 3. Time & Store Analysis — Power BI
+
+Analyzes sales performance across different stores and time periods.
+
+**Key analysis:**
+
+* Revenue by Month and Store Location
+* Revenue by Store Location
+* Transactions by Store Location
+* Revenue by Hour
+* Revenue by Weekday
+* Store × Weekday Revenue Analysis
+
+This dashboard helps identify high-performing stores, peak operating hours, and differences in sales patterns across locations and days.
+
+---
+
+### 4. Coffee Shop Sales — Excel
+
+An Excel-based version of the coffee shop sales analysis.
+
+The dashboard uses Excel's data analysis and visualization capabilities to present important sales KPIs and trends in an interactive format.
+
+It provides a comparison between **Excel-based dashboard development and Power BI-based business intelligence reporting**.
+
+---
+
+## 📈 Key Business Questions
+
+The project was designed to answer questions such as:
+
+* How much revenue is being generated?
+* How are sales changing over time?
+* Which product categories generate the most revenue?
+* Which individual products are the top performers?
+* Which store location generates the highest revenue?
+* What are the busiest sales hours?
+* Which days of the week generate the most revenue?
+* How does store performance vary across different weekdays?
+* Which products have high sales volume versus high revenue?
+
+---
+
+## 🔑 Key Insights
+
+The analysis highlights several important patterns:
+
+* **Coffee** is the highest-revenue product category.
+* Sales are strongest during the **morning hours**, with the peak around **10 AM**.
+* **Hell's Kitchen** is the highest-revenue store among the three locations.
+* Weekday sales are generally stronger than weekend sales.
+* A small group of products contributes a significant portion of overall revenue.
+* Product quantity and revenue do not always rank products in the same order, highlighting the importance of analyzing both metrics.
+
+---
+
+## 📂 Dataset Columns
+
+| Column             | Description                   |
+| ------------------ | ----------------------------- |
+| `transaction_id`   | Unique transaction identifier |
+| `transaction_date` | Date of transaction           |
+| `transaction_time` | Time of transaction           |
+| `transaction_qty`  | Quantity purchased            |
+| `store_id`         | Store identifier              |
+| `store_location`   | Store location                |
+| `product_id`       | Product identifier            |
+| `unit_price`       | Price per unit                |
+| `product_category` | Product category              |
+| `product_type`     | Product type                  |
+| `product_detail`   | Detailed product name         |
+| `revenue`          | Revenue generated             |
+| `month`            | Month number                  |
+| `month_name`       | Month name                    |
+| `weekday`          | Weekday number                |
+| `weekday name`     | Weekday name                  |
+| `hour`             | Transaction hour              |
+
+---
+
+## 📐 Key DAX Measures
+
+The Power BI dashboards use measures such as:
+
+* Total Revenue
+* Total Transactions
+* Total Quantity
+* Average Transaction Value
+* Average Unit Price
+* Total Product Types
+* Revenue per Quantity
+
+These measures allow the dashboards to dynamically respond to filters and slicers.
+
+---
+
+## 🎯 Skills Demonstrated
+
+### Power BI
+
 * Dashboard Development
-
-## 🎯 Business Questions
-
-The dashboard was designed to answer questions such as:
-
-* How does revenue change from month to month?
-* Which days of the week have the highest number of transactions?
-* What hours of the day have the highest transaction activity?
-* Which product categories generate the most transactions?
-* Which individual products perform best?
-* How does sales performance vary across different store locations?
-
-## 📊 Dashboard Features
-
-### 1. Revenue by Month
-
-The dashboard tracks total revenue from **January to June**, allowing monthly sales trends to be analyzed.
-
-For the displayed location, revenue increased from approximately **27.3K in January** to **55.1K in June**, showing a strong upward trend during the period.
-
-### 2. Transactions by Day of Week
-
-The dashboard compares transaction volumes across all seven days.
-
-The analysis shows that **Thursday has the highest transaction volume**, while Saturday has the lowest among the displayed days.
-
-### 3. Transactions by Hour of Day
-
-Hourly transaction analysis shows how customer activity changes throughout the day.
-
-The dashboard indicates that transaction activity is highest around **10 AM**, while activity generally decreases after the morning peak.
-
-### 4. Transactions by Product Category
-
-The dashboard compares transaction volumes across product categories.
-
-The largest categories shown are:
-
-* **Coffee:** 20,025 transactions
-* **Tea:** 16,260 transactions
-* **Bakery:** 7,289 transactions
-* **Drinking Chocolate:** 4,300 transactions
-* **Flavours:** 1,490 transactions
-
-Coffee is the highest-volume product category in the displayed analysis.
-
-### 5. Top 15 Products
-
-The dashboard includes a Top 15 Products table containing:
-
-* Product name
-* Number of transactions
-* Revenue generated
-
-Among the displayed products, **Brewed Chai Tea** has the highest transaction count at **6,293**, while **Barista Espresso** generates the highest revenue at approximately **27,935**.
-
-## 📍 Location Analysis
-
-A location slicer allows the dashboard to be filtered by:
-
-* Astoria
-* Hell's Kitchen
-* Lower Manhattan
-
-This makes it possible to analyze sales performance for individual store locations.
-
-## 💡 Key Insights
-
-Based on the dashboard:
-
-1. Monthly revenue shows a strong upward trend from January through June.
-2. Thursday records the highest transaction volume among the displayed days.
-3. Customer transaction activity reaches its highest level around 10 AM.
-4. Coffee is the highest-volume product category.
-5. Brewed Chai Tea has the highest transaction count among the displayed top products.
-6. Barista Espresso generates the highest revenue among the displayed top products.
-7. Location-based filtering makes it possible to compare store-level performance.
-
-## 📁 Project Files
-
-| File                     | Description                                       |
-| ------------------------ | ------------------------------------------------- |
-| `Coffee_Shop_Sales.xlsx` | Complete Excel analysis and interactive dashboard |
-| `coffee_shop_sales.png`          | Preview image of the completed dashboard          |
-
-## 📸 Dashboard Preview
-
-![Coffee Shop Sales Dashboard](coffee_shop_sales.png)
-
-## 🎓 Skills Demonstrated
-
-* Microsoft Excel
-* Data Cleaning
-* Data Analysis
-* PivotTables
-* PivotCharts
-* Excel Slicers
 * Data Visualization
-* Dashboard Design
+* DAX Measures
+* KPI Design
+* Interactive Filtering
+* Conditional Formatting
+* Business Analysis
+
+### Excel
+
+* Dashboard Development
+* Pivot Tables
+* Data Visualization
+* KPI Reporting
+* Sales Analysis
+
+### Data Analytics
+
+* Trend Analysis
+* Product Performance Analysis
+* Store Performance Analysis
+* Time-Based Analysis
 * Business Insight Generation
 
-## 🚀 Project Outcome
+## 🚀 Project Objective
 
-This project demonstrates how Excel can be used to transform raw coffee shop transaction data into an interactive business dashboard that helps identify sales trends, customer behavior, product performance, and location-level patterns.
+The primary objective of this project was to transform raw coffee shop transaction data into **interactive, business-focused dashboards** that make sales performance easier to understand and support data-driven decision-making.
+
+By developing the project in both **Power BI and Excel**, the project demonstrates the ability to communicate the same business problem through different data analytics and visualization tools.
+
+---
 
 ## 👤 Author
 
 **Aviral Kumar**
 
-Aspiring Data Analyst
-**Excel | SQL | Power BI | Data Analytics**
+BCA Student | Aspiring Data Analyst
+
+**Skills:** Power BI • Excel • SQL • Data Analytics
